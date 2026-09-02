@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "SecTF PhishGuard",
+  "version": "0.5.0",
+  "description": "Analiza localmente el correo abierto en Gmail y Outlook Web y explica posibles señales de phishing.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://dns.google/*", "https://rdap.org/*"],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "Analizar correo con SecTF PhishGuard",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
